@@ -1,0 +1,25 @@
+const config =
+{
+  "proxyServerPort": 9999,
+  "server": "ws://us1.nimiq.skypool.org:4000",
+  "miningAddress": "",
+}
+module.exports = config;
+
+
+/*
+Modify config.txt file, run `node proxy.js` to start proxy.
+
+proxy_config.txt description：
+
+* proxyServerPort: proxy port.
+* server: node address of Skypool mining servers as follows. Only support single server currently.
+* address(optimal): wallet address, mining reward will send to this address automatically.
+Hint: If you do not set this value, the mining address will be determined by mining client; if you set this value, the mining address will be forced to this value, ignoring the mining client's setting.
+
+Server List:
+Hongkong-0: ws://hk0.nimiq.skypool.org:4000
+Shanghai-1: ws://sh1.nimiq.skypool.org:4000
+Europe-1: ws://eu1.nimiq.skypool.org:4000
+USA-1: ws://us1.nimiq.skypool.org:4000
+*/
