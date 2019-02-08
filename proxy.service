@@ -1,0 +1,9 @@
+[Unit]
+Description=Proxy Service
+
+[Service]
+ExecStart=/nimiq/CPU/skypool-node-client
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
